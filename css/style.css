@@ -1,0 +1,187 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-padding-top: 82px;
+}
+
+body {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  background-color: bg-color;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  margin: 0 auto 40px;
+  width: 60px;
+  height: 4px;
+  background-color: #039dff;
+}
+
+.blue-text {
+  color: #039dff;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.btn-outline-light {
+  z-index: 6;
+}
+
+nav {
+  text-transform: uppercase;
+  transition: background-color 0.8s;
+  z-index: 1;
+}
+nav a,
+nav i {
+  color: #eeece6;
+}
+nav a:hover {
+  color: #039dff;
+}
+nav .fa-bars {
+  padding: 10px;
+}
+nav .navbar-brand {
+  font-weight: bold;
+}
+nav .active {
+  color: #039dff;
+}
+
+header {
+  color: #eeece6;
+}
+header h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+header p {
+  font-size: 14px;
+}
+header .hero-img {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/header-m.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+header .hero-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -10;
+}
+header .hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+  z-index: 5;
+}
+header .btn-outline-light {
+  text-transform: uppercase;
+}
+
+.fa-chevron-down {
+  font-size: 40px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.fa-chevron-down:hover {
+  color: #039dff;
+}
+
+.aboutus i {
+  margin-top: 20px;
+  font-size: 30px;
+}
+.aboutus .aboutus-card-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.aboutus .aboutus-card-text {
+  font-size: 14px;
+}
+.aboutus .aboutus-hover {
+  transition: 0.3s;
+}
+.aboutus .aboutus-hover:hover {
+  color: #039dff;
+}
+
+.aboutus-hero {
+  position: relative;
+  background-image: url("/img/cpu.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #ddd;
+  z-index: 0;
+}
+.aboutus-hero .aboutus-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.705);
+  z-index: -5;
+}
+.aboutus-hero .aboutus-hero-item {
+  margin: 10px 0;
+}
+.aboutus-hero .aboutus-hero-item i {
+  font-size: 36px;
+}
+
+.btn {
+  color: #ddd;
+}
+.btn .btn-primary {
+  background-color: #039dff;
+}
+
+@media (min-width: 375px) {
+  header h1 {
+    font-size: 36px;
+  }
+  header p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 992px) {
+  nav {
+    height: 82px;
+  }
+}
+@media (max-width: 768px) {
+  .carousel-inner {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  header .hero-img {
+    background-image: url("../img/header-l.jpg");
+  }
+}/*# sourceMappingURL=style.css.map */

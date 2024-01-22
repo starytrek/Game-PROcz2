@@ -1,0 +1,195 @@
+@import 'colors';
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	scroll-padding-top: 82px;
+}
+body {
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	background-color: bg-color;
+}
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+}
+.underline {
+	margin: 0 auto 40px;
+	width: 60px;
+	height: 4px;
+	background-color: $blue-color;
+}
+.blue-text {
+	color: $blue-color;
+}
+.shadow-bg {
+	background-color: rgba(0, 0, 0, 0.65);
+}
+.btn-outline-light {
+	z-index: 6;
+}
+nav {
+	text-transform: uppercase;
+	transition: background-color 0.8s;
+	z-index: 1;
+	a,
+	i {
+		color: $white;
+	}
+	a:hover {
+		color: $blue-color;
+	}
+	.fa-bars {
+		padding: 10px;
+	}
+	.navbar-brand {
+		font-weight: bold;
+	}
+	.active {
+		color: $blue-color;
+	}
+}
+
+header {
+	color: $white;
+	h1 {
+		font-size: 30px;
+		text-transform: uppercase;
+		// text-align: center;
+		// ???
+	}
+	p {
+		font-size: 14px;
+	}
+	.hero-img {
+		position: relative;
+		height: 100vh;
+		background-image: url('../img/header-m.jpg');
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		z-index: 0;
+	}
+	.hero-shadow {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.7);
+		z-index: -10;
+	}
+	.hero-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: 100%;
+		padding: 10px;
+		text-align: center;
+		z-index: 5;
+	}
+	.btn-outline-light {
+		text-transform: uppercase;
+	}
+}
+.fa-chevron-down {
+	font-size: 40px;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.fa-chevron-down:hover {
+	color: $blue-color;
+	// transform: rotate( -180deg );
+}
+.aboutus {
+	i {
+		margin-top: 20px;
+		font-size: 30px;
+	}
+	.aboutus-card-title {
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+	.aboutus-card-text {
+		font-size: 14px;
+	}
+	.aboutus-hover {
+		transition: 0.3s;
+	}
+	.aboutus-hover:hover {
+		color: $blue-color;
+	}
+}
+.aboutus-hero {
+	position: relative;
+	background-image: url('/img/cpu.jpg');
+	background-position: center;
+	background-size: cover;
+	color: $light-gray;
+	z-index: 0;
+
+	.aboutus-shadow {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.705);
+		z-index: -5;
+	}
+	.aboutus-hero-item {
+		margin: 10px 0;
+		i {
+			font-size: 36px;
+		}
+	}
+}
+
+.btn {
+	// background-color: $gray;
+	color: $light-gray;
+	.btn-primary {
+		background-color: $blue-color;
+	}
+}
+
+@media (min-width: 375px) {
+	header {
+		h1 {
+			font-size: 36px;
+		}
+		p {
+			font-size: 16px;
+		}
+	}
+}
+@media (min-width: 992px) {
+	// html {
+	// 	scroll-padding-top: 72px;
+	// }
+	nav {
+		height: 82px;
+	}
+}
+@media (max-width: 768px) {
+	.carousel-inner {
+		display: none;
+	}
+}
+@media (min-width: 768px) {
+	// .card-group {
+	// 	display: none;
+	// }
+}
+@media (min-width: 1200px) {
+	header {
+		.hero-img {
+			background-image: url('../img/header-l.jpg');
+		}
+	}
+}
